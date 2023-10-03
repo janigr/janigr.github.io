@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* CSS za sredinsko centriranje in ozadje džungle */
+        /* CSS za sredinsko centriranje in svetlo modro ozadje */
         body {
             display: flex;
             flex-direction: column;
@@ -12,62 +12,89 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-image: url('pot_do_slike/ozadje_dzungla.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-color: #c0e1ff; /* Svetlo modro ozadje */
         }
-        h1, p, ul, .button-container {
-            text-align: center;
-            color: white; /* Belo besedilo za boljšo berljivost na temnem ozadju */
+        /* Oblikovanje za naslov z večjim fontom in pisavo Comic Sans */
+        h1 {
+            font-size: 36px; /* Večji font */
+            font-family: "Comic Sans MS", cursive, sans-serif; /* Pisava Comic Sans */
         }
-        /* Oblikovanje za gumb Wikipedia (zelena barva) */
-        .wikipedia-button {
-            background-color: green;
+        p, ul, .button-container {
+            text-align: left;
+        }
+        /* Oblikovanje za gumb Facebook (modra barva) */
+        .facebook-button {
+            background-color: #1877f2; /* Modra barva Facebooka */
             color: white;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             margin: 5px;
         }
-        /* Oblikovanje za gumb Google (rumena barva) */
-        .google-button {
-            background-color: yellow;
-            color: black;
+        /* Oblikovanje za gumb Instagram (barva Instagrama) */
+        .instagram-button {
+            background-color: #e4405f; /* Barva Instagrama */
+            color: white;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             margin: 5px;
         }
-        /* Oblikovanje za okvirčke */
+        /* Oblikovanje za okvirčke z zeleno barvo (levo poravnani) */
         .contact-info {
-            border: 2px solid #ccc;
+            border: 2px solid green; /* Zelena barva obrobe okvirčka */
+            background-color: lightgreen; /* Zelena barva ozadja okvirčka */
             padding: 10px;
             border-radius: 5px;
             margin: 5px;
             display: inline-block;
+            font-weight: bold; /* Krepko besedilo */
+            font-style: italic; /* Poševno besedilo */
+            text-align: left; /* Leva poravnava */
+        }
+        /* Oblikovanje za podčrtano besedo Kontakt z italic fontom */
+        .contact-header {
+            text-decoration: underline; /* Podčrtano besedilo */
+            font-style: italic; /* Poševno besedilo */
+        }
+        /* Oblikovanje za besedilo nad gumboma */
+        .social-media-text {
+            margin-bottom: 10px;
+        }
+        /* Dodajanje stila za ikone igralnih kart */
+        .card-icons {
+            font-size: 36px; /* Velikost ikone */
+            margin-top: 10px; /* Razmik zgoraj */
         }
     </style>
     <title>Vaš Ime in Priimek</title>
 </head>
 <body>
-    <h1>Vaše Ime in Priimek</h1>
+    <!-- Naslov z večjim fontom in pisavo Comic Sans -->
+    <h1>Lucky Jani</h1>
     
-    <!-- Slika tigra -->
-    <img src="pot_do_slike/slika_tigra.jpg" alt="Slika tigra" width="300">
+    <!-- Ikone igralnih kart (srce, karo, pik in križ) -->
+    <div class="card-icons">
+        &#9829; &#9830; &#9824; &#9827;
+    </div>
 
-    <p>Opis: Tukaj lahko napišete svoj opis.</p>
-    <p>Kontakt:
+    <p>Moje ime je Jani in na tej strani lahko izveste vse o sreči, katero vam lahko preberemo iz srečnih kart. <br>Na spodnjih povezavah boste izvedeli vse, kar vas je kadarkoli zanimalo v zvezi s srečnimi kartami.</p>
+    <!-- Kontakt -->
+    <p><span class="contact-header">Kontakt</span>:
         <ul>
-            <li>Email: <span class="contact-info"><a href="mailto:vase@email.si">vase@email.si</a></span></li>
-            <li>Telefon: <span class="contact-info"><a href="tel:+123456789">123-456-789</a></span></li>
+            <li>Email: <span class="contact-info"><a href="mailto:vase@email.si">Luckyjani@gmail.com</a></span></li>
+            <li>Telefon: <span class="contact-info"><a href="tel:+123456789">0123456789</a></span></li>
+            <li>Naslov: <span class="contact-info">Srečna ulica 7, Ljubljana</span></li>
         </ul>
     </p>
 
-    <!-- Gumba za Wikipedia in Google -->
+    <!-- Besedilo nad gumboma -->
+    <p class="social-media-text">Dostopen sem tudi na spletnih medijih</p>
+
+    <!-- Gumba za Facebook in Instagram -->
     <div class="button-container">
-        <a href="https://www.wikipedia.org/" target="_blank" class="wikipedia-button">Wikipedia</a>
-        <a href="https://www.google.com/" target="_blank" class="google-button">Google</a>
+        <a href="https://www.facebook.com/" target="_blank" class="facebook-button">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank" class="instagram-button">Instagram</a>
     </div>
 </body>
 </html>
